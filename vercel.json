@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "destination": "",
+      "destination": "https://sayanasebastiandental.com/$1",
       "permanent": true
     }
   ]
