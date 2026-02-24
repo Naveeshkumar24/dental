@@ -59,9 +59,7 @@ const Navbar = () => {
                 {link.label}
               </button>
             ))}
-            <Button onClick={() => scrollToSection("appointment")}>
-              Book Now
-            </Button>
+            
           </div>
 
           {/* Mobile Menu Button */}
