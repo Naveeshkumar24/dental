@@ -38,7 +38,10 @@ const QueryForm = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section
+      id="any-query"
+      className="py-20 bg-gray-50 scroll-mt-24"
+    >
       <div className="max-w-xl mx-auto px-4">
         <h2 className="text-2xl font-semibold mb-6 text-center">
           Have a Question?
@@ -88,7 +91,9 @@ const QueryForm = () => {
         )}
 
         {error && (
-          <p className="text-red-600 text-center mt-4">{error}</p>
+          <p className="text-red-600 text-center mt-4">
+            {error}
+          </p>
         )}
       </div>
     </section>

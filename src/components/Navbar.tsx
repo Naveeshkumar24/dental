@@ -15,7 +15,9 @@ const Navbar = () => {
   }, []);
 
   const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.scrollIntoView({ behavior: "smooth" });
     setIsMobileMenuOpen(false);
   };
 
@@ -41,7 +43,9 @@ const Navbar = () => {
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-xl">🦷</span>
             </div>
-            <span className="font-bold text-lg text-foreground">Dr. Sayana Sebastian</span>
+            <span className="font-bold text-lg text-foreground">
+              Dr. Sayana Sebastian
+            </span>
           </div>
 
           {/* Desktop Navigation */}
@@ -66,6 +70,7 @@ const Navbar = () => {
             size="icon"
             className="md:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
               <X className="w-6 h-6" />
