@@ -22,9 +22,8 @@ const Navbar = () => {
   const navLinks = [
     { label: "Home", id: "home" },
     { label: "About", id: "about" },
-    { label: "Services", id: "services" },
     { label: "Certifications", id: "certifications" },
-    { label: "Contact", id: "contact" },
+    { label: "Any Query", id: "any-query" },
   ];
 
   return (
